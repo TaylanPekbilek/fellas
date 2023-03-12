@@ -1,0 +1,1688 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{background-color: black;}
+
+/*side bar*/
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #e9760b;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+.sidebarbaşlık{
+    text-align: center;
+    color: white;
+  }
+.yazi {  text-align: center;
+  margin-top: 5%;
+  color: white;}
+.çizgi{margin-top: 150%;}
+
+.yazi1{color: white;
+margin-top: 5%;}
+
+.closbtn{margin-left: 90%;}
+.sidebarbtn {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #ff0303;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 5%;
+}
+
+/*sidebar bitiş*/
+
+/*Navbar başlangıç*/
+.navbar{
+  display: flex;
+  justify-content: center;
+  background-color: #e9760b;
+  height: 85px;
+  position: relative;
+  width: 100;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.navbar li img{width: 70%;}
+.navbar ul{
+  display: flex;
+  align-items: center;
+}
+.navbar ul li {
+  padding: 2rem;
+  list-style: none;
+}
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+.navbar a 
+{
+text-decoration:none;
+position:relative;
+}
+.navbar a::before 
+{
+content:'';
+position:absolute;
+left:0;
+bottom:0;
+width:0px;
+height:3px;
+background:#111111;
+opacity:0;
+-webkit-transition: width 2s; /* Safari */
+  transition: width 1s;
+}
+
+.navbar a:hover:before
+{
+opacity:1;
+width:100%;
+}
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #e9760b;
+}
+
+li {
+float: left;
+}
+
+li a, .dropbtn {
+display: inline-block;
+color: #e9760b;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+/* li a:hover, .dropdown:hover .dropbtn {
+background-color: red;
+} */
+
+li.dropdown {
+display: inline-block;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #e9760b;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+color: rgb(255, 255, 255);
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #e9760b;}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+
+
+/*cards*/
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  margin-left: 15%;
+
+}
+
+.card-1 {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.692);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-top: 5%;
+}
+
+.baslik-1{color: white;}
+
+.info-1{color: rgb(255, 255, 255);}
+
+.price-1 {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+}
+
+.card-1 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #ff0303;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 5%;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.card-2 {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.692);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-top: 5%;
+}
+
+.baslik-2{color: white;}
+
+.info-2{
+  color: rgb(255, 255, 255);
+  margin-bottom: 6%;
+  margin-top: 5%;
+}
+
+.price-2 {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  margin-top: 2%;
+}
+
+.card-2 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #ff0303;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 5%;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.card-3 {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.692);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-top: 5%;
+}
+
+.baslik-3{color: white;}
+
+.info-3{
+  color: rgb(255, 255, 255);
+  margin-bottom: 6%;
+  margin-top: 5%;
+}
+
+.price-3 {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  margin-top: 2%;
+}
+
+.card-3 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #ff0303;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 5%;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.card-4 {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.692);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-top: 5%;
+}
+
+.baslik-4{color: white;}
+
+.info-4{
+  color: rgb(255, 255, 255);
+  /* margin-bottom: 6%;
+  margin-top: 5%; */
+}
+
+.price-4 {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  margin-top: 2%;
+}
+
+.card-4 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #ff0303;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 5%;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.card-5 {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.692);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-top: 5%;
+}
+
+.baslik-5{color: white;}
+
+.info-5{
+  color: rgb(255, 255, 255);
+  /* margin-bottom: 6%;*/
+  margin-top: 5%; 
+}
+
+.price-5 {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  margin-top: 2%;
+}
+
+.card-5 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #ff0303;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 5%;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.card-6 {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.692);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-top: 5%;
+}
+
+.baslik-6{color: white;}
+
+.info-6{
+  color: rgb(255, 255, 255);
+  /* margin-bottom: 6%;*/
+  /* margin-top: 5%;  */
+}
+
+.price-6 {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  margin-top: 1%;
+}
+
+.card-6 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #ff0303;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 5%;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.card-7 {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.692);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-top: 5%;
+}
+
+.baslik-7{color: white;}
+
+.info-7{
+  color: rgb(255, 255, 255);
+  /* margin-bottom: 6%;*/
+  /* margin-top: 5%;  */
+}
+
+.price-7 {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  margin-top: 1%;
+}
+
+.card-7 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #ff0303;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 5%;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.card-8 {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.692);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-top: 5%;
+}
+
+.baslik-8{color: white;}
+
+.info-8{
+  color: rgb(255, 255, 255);
+  /* margin-bottom: 6%;*/
+  /* margin-top: 5%;  */
+}
+
+.price-8 {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  margin-top: 1%;
+}
+
+.card-8 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #ff0303;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 5%;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.card-9 {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.692);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-top: 5%;
+}
+
+.baslik-9 {color: white;}
+
+.info-9 {
+  color: rgb(255, 255, 255);
+  /* margin-bottom: 6%;*/
+  /* margin-top: 5%;  */
+}
+
+.price-9 {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  margin-top: 1%;
+}
+
+.card-9 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #ff0303;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 5%;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.card-10 {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.692);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-top: 5%;
+}
+
+.baslik-10 {color: white;}
+
+.info-10 {
+  color: rgb(255, 255, 255);
+  /* margin-bottom: 6%;*/
+  margin-top: 7%;  
+}
+
+.price-10 {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  margin-top: 6%;
+}
+
+.card-10 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #ff0303;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 5%;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.card-11 {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.692);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-top: 5%;
+}
+
+.baslik-11 {color: white;}
+
+.info-11 {
+  color: rgb(255, 255, 255);
+  /* margin-bottom: 6%;*/
+  margin-top: 3%;  
+}
+
+.price-11 {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  margin-top: 4%;
+}
+
+.card-11 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #ff0303;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 5%;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.card-12 {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.692);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-top: 5%;
+}
+
+.baslik-12 {color: white;}
+
+.info-12 {
+  color: rgb(255, 255, 255);
+  /* margin-bottom: 16%; */
+  margin-top: 3%;  
+}
+
+.price-12 {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  margin-top: 4%;
+  margin-bottom: 2%;
+}
+
+.card-12 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #ff0303;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 5%;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.card-13 {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.692);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-top: 5%;
+}
+
+.baslik-13 {color: white;}
+
+.info-13 {
+  color: rgb(255, 255, 255);
+  /* margin-bottom: 16%; */
+  margin-top: 3%;  
+}
+
+.price-13 {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  margin-top: 4%;
+  margin-bottom: 2%;
+}
+
+.card-13 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #ff0303;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 5%;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.card-14 {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.692);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-top: 5%;
+}
+
+.baslik-14 {color: white;}
+
+.info-14 {
+  color: rgb(255, 255, 255);
+  margin-bottom: 9%;
+  margin-top: 5%;
+} 
+
+
+.price-14 {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  margin-top: 6%;
+  margin-bottom: 4%;
+}
+
+.card-14 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #ff0303;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 5%;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.card-15 {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.692);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-top: 5%;
+}
+
+.baslik-15 {color: white;}
+
+.info-15 {
+  color: rgb(255, 255, 255);
+  margin-bottom: 9%;
+  margin-top: 5%;
+} 
+
+
+.price-15 {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  margin-top: 6%;
+  margin-bottom: 4%;
+}
+
+.card-15 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #ff0303;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 5%;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.card-16 {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.692);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-top: 5%;
+}
+
+.baslik-16 {color: white;}
+
+.info-16 {
+  color: rgb(255, 255, 255);
+  /* margin-bottom: 9%;
+  margin-top: 5%; */
+} 
+
+
+.price-16 {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  margin-top: 2%;
+  margin-bottom: 4%;
+}
+
+.card-16 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #ff0303;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 5%;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.card-17 {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.692);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-top: 5%;
+}
+
+.baslik-17 {color: white;}
+
+.info-17 {
+  color: rgb(255, 255, 255);
+  /* margin-bottom: 9%;
+  margin-top: 5%; */
+} 
+
+
+.price-17 {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  margin-top: 2%;
+  margin-bottom: 4%;
+}
+
+.card-17 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #ff0303;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 5%;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.card-18 {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.692);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-top: 5%;
+}
+
+.baslik-18 {color: white;}
+
+.info-18 {
+  color: rgb(255, 255, 255);
+  /* margin-bottom: 9%;
+  margin-top: 5%; */
+} 
+
+
+.price-18 {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  margin-top: 2%;
+  margin-bottom: 4%;
+}
+
+.card-18 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #ff0303;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 5%;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.card-19 {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.692);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-top: 5%;
+}
+
+.baslik-19 {color: white;}
+
+.info-19 {
+  color: rgb(255, 255, 255);
+  /* margin-bottom: 7%; */
+  margin-top: 13%;
+} 
+
+
+.price-19 {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  /* margin-top: 5%;
+  margin-bottom: 5%; */
+}
+
+.card-19 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #ff0303;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 5%;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.card-20 {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.692);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-top: 5%;
+  
+}
+
+.baslik-20 {color: white;}
+
+.info-20 {
+  color: rgb(255, 255, 255);
+  /* margin-bottom: 9%;
+  margin-top: 5%; */
+} 
+
+
+.price-20 {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  margin-top: 1%;
+  margin-bottom: 0%;
+}
+
+.card-20 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #ff0303;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 5%;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.card-21 {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.692);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-top: 5%;
+  
+}
+
+.baslik-21 {color: white;}
+
+.info-21 {
+  color: rgb(255, 255, 255);
+  margin-top: 3%;
+  margin-bottom: 11%;
+} 
+
+
+.price-21 {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+
+.card-21 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #ff0303;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 5%;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.card-22 {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.692);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-top: 5%;
+  
+}
+
+.baslik-22 {color: white;}
+
+.info-22 {
+  color: rgb(255, 255, 255);
+  /* margin-bottom: 9%;*/
+  margin-bottom: 8%; 
+} 
+
+
+.price-22 {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  margin-top: 5%;
+  margin-bottom: 6%;
+}
+
+.card-22 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #ff0303;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 5%;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.card-23 {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.692);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-top: 5%;
+  
+}
+
+.baslik-23 {color: white;}
+
+.info-23 {
+  color: rgb(255, 255, 255);
+  margin-bottom: 9%;
+  margin-top: 6%; 
+} 
+
+
+.price-23 {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  margin-top: 4%; 
+  margin-bottom: 3%;
+}
+
+.card-23 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #ff0303;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 5%;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.card-24 {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.692);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-top: 5%;
+  
+}
+
+.baslik-24 {color: white;}
+
+.info-24 {
+  color: rgb(255, 255, 255);
+  margin-bottom: 6%;
+  margin-top: 5%; 
+} 
+
+
+.price-24 {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  margin-top: 2%; 
+  margin-bottom: 1%;
+}
+
+.card-24 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #ff0303;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 5%;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.card-25 {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.692);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-top: 5%;
+  
+}
+
+.baslik-25 {color: white;}
+
+.info-25 {
+  color: rgb(255, 255, 255);
+  margin-bottom: 9%;
+  margin-top: 9%; 
+} 
+
+
+.price-25 {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  margin-top: 7%; 
+  margin-bottom:7%;
+}
+
+.card-25 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #ff0303;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 5%;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.card-26 {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.692);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-top: 5%;
+  
+}
+
+.baslik-26 {color: white;}
+
+.info-26 {
+  color: rgb(255, 255, 255);
+  margin-bottom: 6%;
+  margin-top: 6%; 
+} 
+
+
+.price-26 {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  margin-top: 4%; 
+  margin-bottom: 9%;
+}
+
+.card-26 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #ff0303;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 5%;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.card-27 {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.692);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-top: 5%;
+  
+}
+
+.baslik-27 {color: white;}
+
+.info-27 {
+  color: rgb(255, 255, 255);
+  margin-bottom: 6%;
+  margin-top: 6%; 
+} 
+
+
+.price-27 {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  margin-top: 5%; 
+  margin-bottom: 8%;
+}
+
+.card-27 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #ff0303;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 5%;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.card-28 {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.692);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-top: 5%;
+  
+}
+
+.baslik-28 {color: white;}
+
+.info-28 {
+  color: rgb(255, 255, 255);
+  margin-bottom: 3%;
+  margin-top: 2%; 
+} 
+
+
+.price-28 {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  margin-top: 2%; 
+  margin-bottom: 1%;
+}
+
+.card-28 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #ff0303;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 5%;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.card-29 {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.692);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-top: 5%;
+  
+}
+
+.baslik-29 {color: white;}
+
+.info-29 {
+  color: rgb(255, 255, 255);
+  margin-bottom: 6%;
+  margin-top: 5%; 
+} 
+
+
+.price-29 {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  margin-top: 2%; 
+  margin-bottom: 1%;
+}
+
+.card-29 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #ff0303;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 5%;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.card-30 {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.692);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-top: 5%;
+  
+}
+
+.baslik-30 {color: white;}
+
+.info-30 {
+  color: rgb(255, 255, 255);
+  margin-bottom: 9%;
+  margin-top: 9%; 
+} 
+
+
+.price-30 {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  margin-top: 7%; 
+  margin-bottom: 5%;
+}
+
+.card-30 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #ff0303;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 5%;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.card-31 {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.692);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-top: 5%;
+  
+}
+
+.baslik-31 {color: white;}
+
+.info-31 {
+  color: rgb(255, 255, 255);
+  margin-bottom: 4%;
+  margin-top: 4%; 
+} 
+
+
+.price-31 {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  margin-top: 3%; 
+  margin-bottom: 5%;
+}
+
+.card-31 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #ff0303;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 5%;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.card-32 {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.692);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-top: 5%;
+  
+}
+
+.baslik-32 {color: white;}
+
+.info-32 {
+  color: rgb(255, 255, 255);
+  margin-bottom: 2%;
+  margin-top: 1%; 
+} 
+
+
+.price-32 {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  margin-top: 3%; 
+  margin-bottom: 1%;
+}
+
+.card-32 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #ff0303;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 5%;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.card-33 {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.692);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-top: 5%;
+  
+}
+
+.baslik-33 {color: white;}
+
+.info-33 {
+  color: rgb(255, 255, 255);
+  margin-bottom: 8%;
+  margin-top: 7%; 
+} 
+
+
+.price-33 {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  margin-top: 3%; 
+  margin-bottom: 3%;
+}
+
+.card-33 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #ff0303;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 5%;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.card-34 {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.692);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-top: 5%;
+  
+}
+
+.baslik-34 {color: white;}
+
+.info-34 {
+  color: rgb(255, 255, 255);
+  margin-bottom: 6%;
+  margin-top: 5%; 
+} 
+
+
+.price-34 {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  margin-top: 7%; 
+  margin-bottom: 5%;
+}
+
+.card-34 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #ff0303;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 5%;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+
+
+
+/*cards bitiş*/
+
+/*footer başlangıç*/
+.footer {
+  /* position: fixed; */
+  bottom: 0px; 
+  left: 0px;
+  width: 100%;
+  height: 15%;
+  padding:15px;
+  background-color: #000;
+  color:rgb(255, 255, 255);
+ 
+  
+ }
+.sosyalmedya{
+  background-color: black;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5%;
+  
+}
+
+
+.instagram { width: 56px;}
+.trip{  
+  margin-top: 8px;
+  width: 40px;}
+  .foursquare{    width: 30px;
+    margin-top: 7px;
+    margin-left: 8px;}
+
+
+/*footer bitiş*/
+
+/*yukarı git buton*/
+#yukari{
+  display:none;
+  position:fixed;
+  bottom:25px;
+  right:25px;
+  background:#00b2f2;
+  width:50px;
+  height:50px;
+  text-align:center;
+  line-height: 50px;
+  border-radius:35px;
+  transition:all .3s ease;
+  z-index:999
+}
+#yukari i{
+  color:#fff;
+  font-size:20px;
+}
+#yukari:hover{
+  background-color:#fcb100
+} 
+/*yukarı git butonu bitiş*/
